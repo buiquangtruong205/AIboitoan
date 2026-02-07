@@ -1,0 +1,37 @@
+# KIẾN THỨC TỬ VI CƠ BẢN
+
+## 1. Cung Mệnh (Mệnh Viên)
+Cung Mệnh là cung quan trọng nhất trong lá số Tử Vi, đại diện cho bản thân đương số, tính cách, ngoại hình và định hướng chung của cuộc đời. Mệnh tốt thì gốc rễ vững chắc, dễ đạt thành tựu.
+- Nếu Mệnh có sao Tử Vi: Tính cách trung hậu, có khả năng lãnh đạo, được người khác nể trọng.
+- Nếu Mệnh có sao Tham Lang: Tính cách phóng khoáng, thích giao tiếp, có tài nghệ thuật nhưng cũng dễ ham vui.
+- Nếu Mệnh có sao Thái Dương: Thông minh, thẳng thắn, quang minh chính đại, thích giúp đỡ người khác.
+
+## 2. Cung Quan Lộc
+Cung Quan Lộc thể hiện con đường công danh, sự nghiệp, học hành và địa vị xã hội.
+- Quan Lộc có Hóa Quyền: Có thực quyền, dễ làm lãnh đạo hoặc nắm giữ vị trí quan trọng.
+- Quan Lộc có Thiên Phủ: Tài chính trong công việc ổn định, làm việc có kế hoạch, giữ tiền tốt.
+
+## 3. Cung Tài Bạch
+Cung Tài Bạch nói về tiền bạc, khả năng kiếm tiền và cách tiêu tiền.
+- Tài Bạch có Vũ Khúc: Sao tài tinh, chủ về giàu có, kinh doanh buôn bán thuận lợi.
+- Tài Bạch có Hóa Lộc: Dồi dào tài lộc, kiếm tiền dễ dàng, có duyên với tiền bạc.
+
+## 4. Các Sao Chính Tinh (Thập Tứ Chính Tinh)
+- **Tử Vi**: Vua của các sao, chủ về quyền lực, thọ khảo, giải ách. Thuộc Thổ.
+- **Thiên Cơ**: Chủ về trí tuệ, cơ mưu, thiện lương. Thuộc Mộc.
+- **Thái Dương**: Mặt trời, chủ về quý hiển, danh tiếng, đàn ông, cha, chồng. Thuộc Hỏa.
+- **Vũ Khúc**: Sao tài, chủ về tiền bạc, cô độc, quả quyết. Thuộc Kim.
+- **Thiên Đồng**: Sao phúc, chủ về hưởng thụ, trẻ con, thay đổi, ôn hòa. Thuộc Thủy.
+- **Liêm Trinh**: Chủ về tù ngục (nếu hãm), đào hoa (nếu đắc), liêm khiết, nóng nảy. Thuộc Hỏa.
+- **Thiên Phủ**: Kho trời, chủ về tài lộc, sự che chở, cẩn trọng. Thuộc Thổ.
+- **Thái Âm**: Mặt trăng, chủ về tài phú, dịu dàng, mẹ, vợ, bất động sản. Thuộc Thủy.
+- **Tham Lang**: Chủ về dục vọng, đào hoa, tài nghệ, giao tiếp hung khéo. Thuộc Thủy/Mộc.
+- **Cự Môn**: Chủ về lời nói, thị phi, ám muội, nghi ngờ, nghiên cứu. Thuộc Thủy.
+- **Thiên Tướng**: Ấn trời, chủ về quyền uy, sự phò tá, gương mẫu, đẹp đẽ. Thuộc Thủy.
+- **Thiên Lương**: Sao ấm, chủ về thọ, sự che chở, thầy thuốc, giáo viên, nguyên tắc. Thuộc Mộc.
+- **Thất Sát**: Tướng quân, chủ về sát phạt, uy quyền, dũng cảm, cô độc. Thuộc Kim.
+- **Phá Quân**: Chủ về hao tán, tiên phong, dũng mãnh, thay đổi triệt để. Thuộc Thủy.
+
+## 5. Các Sao Phụ Tinh Quan Trọng
+- **Lục Cát Tinh (Tốt):** Văn Xương, Văn Khúc (văn chương); Tả Phù, Hữu Bật (trợ giúp); Thiên Khôi, Thiên Việt (quý nhân).
+- **Lục Sát Tinh (Xấu):** Kình Dương, Đà La (chống đối, trắc trở); Hỏa Tinh, Linh Tinh (nóng nảy, tai họa bất ngờ); Địa Không, Địa Kiếp (mất mát, phá hoại).

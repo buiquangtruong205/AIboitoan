@@ -1,0 +1,37 @@
+# General
+.DS_Store
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Node.js
+**/node_modules/
+**/dist/
+**/build/
+.npm
+**/*.log
+
+# Python
+**/__pycache__/
+**/*.pyc
+**/*.pyo
+**/*.pyd
+.Python
+**/venv/
+**/env/
+**/*.db
+**/*.sqlite
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Project Specific
+server/faiss_horoscope/
+server/faiss_tu_vi/
+server/faiss_tarot/
+server/chroma_db/

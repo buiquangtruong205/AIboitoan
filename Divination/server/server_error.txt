@@ -1,0 +1,797 @@
+Error: RetryError[<Future at 0x257d8e43fb0 state=finished raised NotFound>]
+Traceback (most recent call last):
+  File "C:\Python312\Lib\site-packages\tenacity\asyncio\__init__.py", line 114, in __call__
+    result = await fn(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\Divination\server\app\api\divination_routes.py", line 78, in generate_with_retry
+    response = await model.generate_content_async(prompt)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\google\generativeai\generative_models.py", line 385, in generate_content_async
+    response = await self._async_client.generate_content(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Roaming\Python\Python312\site-packages\google\ai\generativelanguage_v1beta\services\generative_service\async_client.py", line 440, in generate_content
+    response = await rpc(
+               ^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Roaming\Python\Python312\site-packages\google\api_core\retry\retry_unary_async.py", line 231, in retry_wrapped_func
+    return await retry_target(
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Roaming\Python\Python312\site-packages\google\api_core\retry\retry_unary_async.py", line 163, in retry_target
+    next_sleep = _retry_error_helper(
+                 ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Roaming\Python\Python312\site-packages\google\api_core\retry\retry_base.py", line 214, in _retry_error_helper
+    raise final_exc from source_exc
+  File "C:\Users\Admin\AppData\Roaming\Python\Python312\site-packages\google\api_core\retry\retry_unary_async.py", line 158, in retry_target
+    return await target()
+           ^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Roaming\Python\Python312\site-packages\google\api_core\grpc_helpers_async.py", line 89, in __await__
+    raise exceptions.from_grpc_error(rpc_error) from rpc_error
+google.api_core.exceptions.NotFound: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "e:\Divination\server\app\api\divination_routes.py", line 50, in ask_divination
+    response_text = await generate_with_retry(prompt)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\tenacity\asyncio\__init__.py", line 189, in async_wrapped
+    return await copy(fn, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\tenacity\asyncio\__init__.py", line 111, in __call__
+    do = await self.iter(retry_state=retry_state)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\tenacity\asyncio\__init__.py", line 153, in iter
+    result = await action(retry_state)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\tenacity\_utils.py", line 99, in inner
+    return call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\tenacity\__init__.py", line 421, in exc_check
+    raise retry_exc from fut.exception()
+tenacity.RetryError: RetryError[<Future at 0x257d8e43fb0 state=finished raised NotFound>]
+
+----------------
+Error: RetryError[<Future at 0x16abbe5a2d0 state=finished raised NotFound>]
+Traceback (most recent call last):
+  File "C:\Python312\Lib\site-packages\tenacity\asyncio\__init__.py", line 114, in __call__
+    result = await fn(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\Divination\server\app\api\divination_routes.py", line 78, in generate_with_retry
+    response = await model.generate_content_async(prompt)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\google\generativeai\generative_models.py", line 385, in generate_content_async
+    response = await self._async_client.generate_content(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Roaming\Python\Python312\site-packages\google\ai\generativelanguage_v1beta\services\generative_service\async_client.py", line 440, in generate_content
+    response = await rpc(
+               ^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Roaming\Python\Python312\site-packages\google\api_core\retry\retry_unary_async.py", line 231, in retry_wrapped_func
+    return await retry_target(
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Roaming\Python\Python312\site-packages\google\api_core\retry\retry_unary_async.py", line 163, in retry_target
+    next_sleep = _retry_error_helper(
+                 ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Roaming\Python\Python312\site-packages\google\api_core\retry\retry_base.py", line 214, in _retry_error_helper
+    raise final_exc from source_exc
+  File "C:\Users\Admin\AppData\Roaming\Python\Python312\site-packages\google\api_core\retry\retry_unary_async.py", line 158, in retry_target
+    return await target()
+           ^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Roaming\Python\Python312\site-packages\google\api_core\grpc_helpers_async.py", line 89, in __await__
+    raise exceptions.from_grpc_error(rpc_error) from rpc_error
+google.api_core.exceptions.NotFound: 404 models/gemini-1.5-flash-latest is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "e:\Divination\server\app\api\divination_routes.py", line 50, in ask_divination
+    response_text = await generate_with_retry(prompt)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\tenacity\asyncio\__init__.py", line 189, in async_wrapped
+    return await copy(fn, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\tenacity\asyncio\__init__.py", line 111, in __call__
+    do = await self.iter(retry_state=retry_state)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\tenacity\asyncio\__init__.py", line 153, in iter
+    result = await action(retry_state)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\tenacity\_utils.py", line 99, in inner
+    return call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\tenacity\__init__.py", line 421, in exc_check
+    raise retry_exc from fut.exception()
+tenacity.RetryError: RetryError[<Future at 0x16abbe5a2d0 state=finished raised NotFound>]
+
+----------------
+Error: RetryError[<Future at 0x24141a86420 state=finished raised NotFound>]
+Traceback (most recent call last):
+  File "C:\Python312\Lib\site-packages\tenacity\asyncio\__init__.py", line 114, in __call__
+    result = await fn(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\Divination\server\app\api\divination_routes.py", line 78, in generate_with_retry
+    response = await model.generate_content_async(prompt)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\google\generativeai\generative_models.py", line 385, in generate_content_async
+    response = await self._async_client.generate_content(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Roaming\Python\Python312\site-packages\google\ai\generativelanguage_v1beta\services\generative_service\async_client.py", line 440, in generate_content
+    response = await rpc(
+               ^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Roaming\Python\Python312\site-packages\google\api_core\retry\retry_unary_async.py", line 231, in retry_wrapped_func
+    return await retry_target(
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Roaming\Python\Python312\site-packages\google\api_core\retry\retry_unary_async.py", line 163, in retry_target
+    next_sleep = _retry_error_helper(
+                 ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Roaming\Python\Python312\site-packages\google\api_core\retry\retry_base.py", line 214, in _retry_error_helper
+    raise final_exc from source_exc
+  File "C:\Users\Admin\AppData\Roaming\Python\Python312\site-packages\google\api_core\retry\retry_unary_async.py", line 158, in retry_target
+    return await target()
+           ^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Roaming\Python\Python312\site-packages\google\api_core\grpc_helpers_async.py", line 89, in __await__
+    raise exceptions.from_grpc_error(rpc_error) from rpc_error
+google.api_core.exceptions.NotFound: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "e:\Divination\server\app\api\divination_routes.py", line 50, in ask_divination
+    response_text = await generate_with_retry(prompt)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\tenacity\asyncio\__init__.py", line 189, in async_wrapped
+    return await copy(fn, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\tenacity\asyncio\__init__.py", line 111, in __call__
+    do = await self.iter(retry_state=retry_state)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\tenacity\asyncio\__init__.py", line 153, in iter
+    result = await action(retry_state)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\tenacity\_utils.py", line 99, in inner
+    return call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\tenacity\__init__.py", line 421, in exc_check
+    raise retry_exc from fut.exception()
+tenacity.RetryError: RetryError[<Future at 0x24141a86420 state=finished raised NotFound>]
+
+----------------
+Error: RetryError[<Future at 0x24142bc41a0 state=finished raised NotFound>]
+Traceback (most recent call last):
+  File "C:\Python312\Lib\site-packages\tenacity\asyncio\__init__.py", line 114, in __call__
+    result = await fn(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\Divination\server\app\api\divination_routes.py", line 78, in generate_with_retry
+    response = await model.generate_content_async(prompt)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\google\generativeai\generative_models.py", line 385, in generate_content_async
+    response = await self._async_client.generate_content(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Roaming\Python\Python312\site-packages\google\ai\generativelanguage_v1beta\services\generative_service\async_client.py", line 440, in generate_content
+    response = await rpc(
+               ^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Roaming\Python\Python312\site-packages\google\api_core\retry\retry_unary_async.py", line 231, in retry_wrapped_func
+    return await retry_target(
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Roaming\Python\Python312\site-packages\google\api_core\retry\retry_unary_async.py", line 163, in retry_target
+    next_sleep = _retry_error_helper(
+                 ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Roaming\Python\Python312\site-packages\google\api_core\retry\retry_base.py", line 214, in _retry_error_helper
+    raise final_exc from source_exc
+  File "C:\Users\Admin\AppData\Roaming\Python\Python312\site-packages\google\api_core\retry\retry_unary_async.py", line 158, in retry_target
+    return await target()
+           ^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Roaming\Python\Python312\site-packages\google\api_core\grpc_helpers_async.py", line 89, in __await__
+    raise exceptions.from_grpc_error(rpc_error) from rpc_error
+google.api_core.exceptions.NotFound: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "e:\Divination\server\app\api\divination_routes.py", line 50, in ask_divination
+    response_text = await generate_with_retry(prompt)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\tenacity\asyncio\__init__.py", line 189, in async_wrapped
+    return await copy(fn, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\tenacity\asyncio\__init__.py", line 111, in __call__
+    do = await self.iter(retry_state=retry_state)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\tenacity\asyncio\__init__.py", line 153, in iter
+    result = await action(retry_state)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\tenacity\_utils.py", line 99, in inner
+    return call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\tenacity\__init__.py", line 421, in exc_check
+    raise retry_exc from fut.exception()
+tenacity.RetryError: RetryError[<Future at 0x24142bc41a0 state=finished raised NotFound>]
+
+----------------
+Error: RetryError[<Future at 0x24141a872c0 state=finished raised NotFound>]
+Traceback (most recent call last):
+  File "C:\Python312\Lib\site-packages\tenacity\asyncio\__init__.py", line 114, in __call__
+    result = await fn(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\Divination\server\app\api\divination_routes.py", line 78, in generate_with_retry
+    response = await model.generate_content_async(prompt)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\google\generativeai\generative_models.py", line 385, in generate_content_async
+    response = await self._async_client.generate_content(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Roaming\Python\Python312\site-packages\google\ai\generativelanguage_v1beta\services\generative_service\async_client.py", line 440, in generate_content
+    response = await rpc(
+               ^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Roaming\Python\Python312\site-packages\google\api_core\retry\retry_unary_async.py", line 231, in retry_wrapped_func
+    return await retry_target(
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Roaming\Python\Python312\site-packages\google\api_core\retry\retry_unary_async.py", line 163, in retry_target
+    next_sleep = _retry_error_helper(
+                 ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Roaming\Python\Python312\site-packages\google\api_core\retry\retry_base.py", line 214, in _retry_error_helper
+    raise final_exc from source_exc
+  File "C:\Users\Admin\AppData\Roaming\Python\Python312\site-packages\google\api_core\retry\retry_unary_async.py", line 158, in retry_target
+    return await target()
+           ^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Roaming\Python\Python312\site-packages\google\api_core\grpc_helpers_async.py", line 89, in __await__
+    raise exceptions.from_grpc_error(rpc_error) from rpc_error
+google.api_core.exceptions.NotFound: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "e:\Divination\server\app\api\divination_routes.py", line 50, in ask_divination
+    response_text = await generate_with_retry(prompt)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\tenacity\asyncio\__init__.py", line 189, in async_wrapped
+    return await copy(fn, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\tenacity\asyncio\__init__.py", line 111, in __call__
+    do = await self.iter(retry_state=retry_state)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\tenacity\asyncio\__init__.py", line 153, in iter
+    result = await action(retry_state)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\tenacity\_utils.py", line 99, in inner
+    return call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\tenacity\__init__.py", line 421, in exc_check
+    raise retry_exc from fut.exception()
+tenacity.RetryError: RetryError[<Future at 0x24141a872c0 state=finished raised NotFound>]
+
+----------------
+Error: RetryError[<Future at 0x261e0e10c80 state=finished raised ChatGoogleGenerativeAIError>]
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Roaming\Python\Python312\site-packages\langchain_google_genai\chat_models.py", line 3088, in _agenerate
+    await self.client.aio.models.generate_content(
+  File "C:\Python312\Lib\site-packages\google\genai\models.py", line 7331, in generate_content
+    response = await self._generate_content(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\google\genai\models.py", line 6095, in _generate_content
+    response = await self._api_client.async_request(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\google\genai\_api_client.py", line 1432, in async_request
+    result = await self._async_request(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\google\genai\_api_client.py", line 1364, in _async_request
+    return await retry(self._async_request_once, http_request, stream)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\tenacity\asyncio\__init__.py", line 111, in __call__
+    do = await self.iter(retry_state=retry_state)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\tenacity\asyncio\__init__.py", line 153, in iter
+    result = await action(retry_state)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\tenacity\_utils.py", line 99, in inner
+    return call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\tenacity\__init__.py", line 400, in <lambda>
+    self._add_action_func(lambda rs: rs.outcome.result())
+                                     ^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+  File "C:\Python312\Lib\site-packages\tenacity\asyncio\__init__.py", line 114, in __call__
+    result = await fn(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\google\genai\_api_client.py", line 1310, in _async_request_once
+    await errors.APIError.raise_for_async_response(response)
+  File "C:\Python312\Lib\site-packages\google\genai\errors.py", line 216, in raise_for_async_response
+    await cls.raise_error_async(status_code, response_json, response)
+  File "C:\Python312\Lib\site-packages\google\genai\errors.py", line 238, in raise_error_async
+    raise ClientError(status_code, response_json, response)
+google.genai.errors.ClientError: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}}
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Python312\Lib\site-packages\tenacity\asyncio\__init__.py", line 114, in __call__
+    result = await fn(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\Divination\server\app\api\divination_routes.py", line 85, in generate_with_retry
+    response = await fallback_llm.ainvoke(prompt)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Roaming\Python\Python312\site-packages\langchain_core\language_models\chat_models.py", line 425, in ainvoke
+    llm_result = await self.agenerate_prompt(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Roaming\Python\Python312\site-packages\langchain_core\language_models\chat_models.py", line 1132, in agenerate_prompt
+    return await self.agenerate(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Roaming\Python\Python312\site-packages\langchain_core\language_models\chat_models.py", line 1090, in agenerate
+    raise exceptions[0]
+  File "C:\Users\Admin\AppData\Roaming\Python\Python312\site-packages\langchain_core\language_models\chat_models.py", line 1359, in _agenerate_with_cache
+    result = await self._agenerate(
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Roaming\Python\Python312\site-packages\langchain_google_genai\chat_models.py", line 3093, in _agenerate
+    _handle_client_error(e, request)
+  File "C:\Users\Admin\AppData\Roaming\Python\Python312\site-packages\langchain_google_genai\chat_models.py", line 145, in _handle_client_error
+    raise ChatGoogleGenerativeAIError(msg) from e
+langchain_google_genai.chat_models.ChatGoogleGenerativeAIError: Error calling model 'gemini-pro' (NOT_FOUND): 404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}}
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "e:\Divination\server\app\api\divination_routes.py", line 49, in ask_divination
+    response_text = await generate_with_retry(prompt)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\tenacity\asyncio\__init__.py", line 189, in async_wrapped
+    return await copy(fn, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\tenacity\asyncio\__init__.py", line 111, in __call__
+    do = await self.iter(retry_state=retry_state)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\tenacity\asyncio\__init__.py", line 153, in iter
+    result = await action(retry_state)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\tenacity\_utils.py", line 99, in inner
+    return call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\tenacity\__init__.py", line 421, in exc_check
+    raise retry_exc from fut.exception()
+tenacity.RetryError: RetryError[<Future at 0x261e0e10c80 state=finished raised ChatGoogleGenerativeAIError>]
+
+----------------
+Error: RetryError[<Future at 0x24b99bfde50 state=finished raised ChatGoogleGenerativeAIError>]
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Roaming\Python\Python312\site-packages\langchain_google_genai\chat_models.py", line 3088, in _agenerate
+    await self.client.aio.models.generate_content(
+  File "C:\Python312\Lib\site-packages\google\genai\models.py", line 7331, in generate_content
+    response = await self._generate_content(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\google\genai\models.py", line 6095, in _generate_content
+    response = await self._api_client.async_request(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\google\genai\_api_client.py", line 1432, in async_request
+    result = await self._async_request(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\google\genai\_api_client.py", line 1364, in _async_request
+    return await retry(self._async_request_once, http_request, stream)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\tenacity\asyncio\__init__.py", line 111, in __call__
+    do = await self.iter(retry_state=retry_state)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\tenacity\asyncio\__init__.py", line 153, in iter
+    result = await action(retry_state)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\tenacity\_utils.py", line 99, in inner
+    return call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\tenacity\__init__.py", line 400, in <lambda>
+    self._add_action_func(lambda rs: rs.outcome.result())
+                                     ^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+  File "C:\Python312\Lib\site-packages\tenacity\asyncio\__init__.py", line 114, in __call__
+    result = await fn(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\google\genai\_api_client.py", line 1310, in _async_request_once
+    await errors.APIError.raise_for_async_response(response)
+  File "C:\Python312\Lib\site-packages\google\genai\errors.py", line 216, in raise_for_async_response
+    await cls.raise_error_async(status_code, response_json, response)
+  File "C:\Python312\Lib\site-packages\google\genai\errors.py", line 238, in raise_error_async
+    raise ClientError(status_code, response_json, response)
+google.genai.errors.ClientError: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}}
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Python312\Lib\site-packages\tenacity\asyncio\__init__.py", line 114, in __call__
+    result = await fn(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\Divination\server\app\api\divination_routes.py", line 85, in generate_with_retry
+    response = await fallback_llm.ainvoke(prompt)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Roaming\Python\Python312\site-packages\langchain_core\language_models\chat_models.py", line 425, in ainvoke
+    llm_result = await self.agenerate_prompt(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Roaming\Python\Python312\site-packages\langchain_core\language_models\chat_models.py", line 1132, in agenerate_prompt
+    return await self.agenerate(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Roaming\Python\Python312\site-packages\langchain_core\language_models\chat_models.py", line 1090, in agenerate
+    raise exceptions[0]
+  File "C:\Users\Admin\AppData\Roaming\Python\Python312\site-packages\langchain_core\language_models\chat_models.py", line 1359, in _agenerate_with_cache
+    result = await self._agenerate(
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Roaming\Python\Python312\site-packages\langchain_google_genai\chat_models.py", line 3093, in _agenerate
+    _handle_client_error(e, request)
+  File "C:\Users\Admin\AppData\Roaming\Python\Python312\site-packages\langchain_google_genai\chat_models.py", line 145, in _handle_client_error
+    raise ChatGoogleGenerativeAIError(msg) from e
+langchain_google_genai.chat_models.ChatGoogleGenerativeAIError: Error calling model 'gemini-pro' (NOT_FOUND): 404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}}
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "e:\Divination\server\app\api\divination_routes.py", line 49, in ask_divination
+    response_text = await generate_with_retry(prompt)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\tenacity\asyncio\__init__.py", line 189, in async_wrapped
+    return await copy(fn, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\tenacity\asyncio\__init__.py", line 111, in __call__
+    do = await self.iter(retry_state=retry_state)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\tenacity\asyncio\__init__.py", line 153, in iter
+    result = await action(retry_state)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\tenacity\_utils.py", line 99, in inner
+    return call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\tenacity\__init__.py", line 421, in exc_check
+    raise retry_exc from fut.exception()
+tenacity.RetryError: RetryError[<Future at 0x24b99bfde50 state=finished raised ChatGoogleGenerativeAIError>]
+
+----------------
+Error: RetryError[<Future at 0x290486bb9b0 state=finished raised ChatGoogleGenerativeAIError>]
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Roaming\Python\Python312\site-packages\langchain_google_genai\chat_models.py", line 3088, in _agenerate
+    await self.client.aio.models.generate_content(
+  File "C:\Python312\Lib\site-packages\google\genai\models.py", line 7331, in generate_content
+    response = await self._generate_content(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\google\genai\models.py", line 6095, in _generate_content
+    response = await self._api_client.async_request(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\google\genai\_api_client.py", line 1432, in async_request
+    result = await self._async_request(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\google\genai\_api_client.py", line 1364, in _async_request
+    return await retry(self._async_request_once, http_request, stream)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\tenacity\asyncio\__init__.py", line 111, in __call__
+    do = await self.iter(retry_state=retry_state)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\tenacity\asyncio\__init__.py", line 153, in iter
+    result = await action(retry_state)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\tenacity\_utils.py", line 99, in inner
+    return call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\tenacity\__init__.py", line 400, in <lambda>
+    self._add_action_func(lambda rs: rs.outcome.result())
+                                     ^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+  File "C:\Python312\Lib\site-packages\tenacity\asyncio\__init__.py", line 114, in __call__
+    result = await fn(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\google\genai\_api_client.py", line 1310, in _async_request_once
+    await errors.APIError.raise_for_async_response(response)
+  File "C:\Python312\Lib\site-packages\google\genai\errors.py", line 216, in raise_for_async_response
+    await cls.raise_error_async(status_code, response_json, response)
+  File "C:\Python312\Lib\site-packages\google\genai\errors.py", line 238, in raise_error_async
+    raise ClientError(status_code, response_json, response)
+google.genai.errors.ClientError: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}}
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Python312\Lib\site-packages\tenacity\asyncio\__init__.py", line 114, in __call__
+    result = await fn(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\Divination\server\app\api\divination_routes.py", line 85, in generate_with_retry
+    response = await fallback_llm.ainvoke(prompt)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Roaming\Python\Python312\site-packages\langchain_core\language_models\chat_models.py", line 425, in ainvoke
+    llm_result = await self.agenerate_prompt(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Roaming\Python\Python312\site-packages\langchain_core\language_models\chat_models.py", line 1132, in agenerate_prompt
+    return await self.agenerate(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Roaming\Python\Python312\site-packages\langchain_core\language_models\chat_models.py", line 1090, in agenerate
+    raise exceptions[0]
+  File "C:\Users\Admin\AppData\Roaming\Python\Python312\site-packages\langchain_core\language_models\chat_models.py", line 1359, in _agenerate_with_cache
+    result = await self._agenerate(
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Roaming\Python\Python312\site-packages\langchain_google_genai\chat_models.py", line 3093, in _agenerate
+    _handle_client_error(e, request)
+  File "C:\Users\Admin\AppData\Roaming\Python\Python312\site-packages\langchain_google_genai\chat_models.py", line 145, in _handle_client_error
+    raise ChatGoogleGenerativeAIError(msg) from e
+langchain_google_genai.chat_models.ChatGoogleGenerativeAIError: Error calling model 'gemini-pro' (NOT_FOUND): 404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}}
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "e:\Divination\server\app\api\divination_routes.py", line 49, in ask_divination
+    response_text = await generate_with_retry(prompt)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\tenacity\asyncio\__init__.py", line 189, in async_wrapped
+    return await copy(fn, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\tenacity\asyncio\__init__.py", line 111, in __call__
+    do = await self.iter(retry_state=retry_state)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\tenacity\asyncio\__init__.py", line 153, in iter
+    result = await action(retry_state)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\tenacity\_utils.py", line 99, in inner
+    return call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\tenacity\__init__.py", line 421, in exc_check
+    raise retry_exc from fut.exception()
+tenacity.RetryError: RetryError[<Future at 0x290486bb9b0 state=finished raised ChatGoogleGenerativeAIError>]
+
+----------------
+Error: RetryError[<Future at 0x2538a56c500 state=finished raised ChatGoogleGenerativeAIError>]
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Roaming\Python\Python312\site-packages\langchain_google_genai\chat_models.py", line 3088, in _agenerate
+    await self.client.aio.models.generate_content(
+  File "C:\Python312\Lib\site-packages\google\genai\models.py", line 7331, in generate_content
+    response = await self._generate_content(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\google\genai\models.py", line 6095, in _generate_content
+    response = await self._api_client.async_request(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\google\genai\_api_client.py", line 1432, in async_request
+    result = await self._async_request(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\google\genai\_api_client.py", line 1364, in _async_request
+    return await retry(self._async_request_once, http_request, stream)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\tenacity\asyncio\__init__.py", line 111, in __call__
+    do = await self.iter(retry_state=retry_state)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\tenacity\asyncio\__init__.py", line 153, in iter
+    result = await action(retry_state)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\tenacity\_utils.py", line 99, in inner
+    return call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\tenacity\__init__.py", line 400, in <lambda>
+    self._add_action_func(lambda rs: rs.outcome.result())
+                                     ^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+  File "C:\Python312\Lib\site-packages\tenacity\asyncio\__init__.py", line 114, in __call__
+    result = await fn(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\google\genai\_api_client.py", line 1310, in _async_request_once
+    await errors.APIError.raise_for_async_response(response)
+  File "C:\Python312\Lib\site-packages\google\genai\errors.py", line 216, in raise_for_async_response
+    await cls.raise_error_async(status_code, response_json, response)
+  File "C:\Python312\Lib\site-packages\google\genai\errors.py", line 238, in raise_error_async
+    raise ClientError(status_code, response_json, response)
+google.genai.errors.ClientError: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}}
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Python312\Lib\site-packages\tenacity\asyncio\__init__.py", line 114, in __call__
+    result = await fn(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\Divination\server\app\api\divination_routes.py", line 95, in generate_with_retry
+    response = await fallback_llm.ainvoke(prompt)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Roaming\Python\Python312\site-packages\langchain_core\language_models\chat_models.py", line 425, in ainvoke
+    llm_result = await self.agenerate_prompt(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Roaming\Python\Python312\site-packages\langchain_core\language_models\chat_models.py", line 1132, in agenerate_prompt
+    return await self.agenerate(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Roaming\Python\Python312\site-packages\langchain_core\language_models\chat_models.py", line 1090, in agenerate
+    raise exceptions[0]
+  File "C:\Users\Admin\AppData\Roaming\Python\Python312\site-packages\langchain_core\language_models\chat_models.py", line 1359, in _agenerate_with_cache
+    result = await self._agenerate(
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Roaming\Python\Python312\site-packages\langchain_google_genai\chat_models.py", line 3093, in _agenerate
+    _handle_client_error(e, request)
+  File "C:\Users\Admin\AppData\Roaming\Python\Python312\site-packages\langchain_google_genai\chat_models.py", line 145, in _handle_client_error
+    raise ChatGoogleGenerativeAIError(msg) from e
+langchain_google_genai.chat_models.ChatGoogleGenerativeAIError: Error calling model 'gemini-pro' (NOT_FOUND): 404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}}
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "e:\Divination\server\app\api\divination_routes.py", line 54, in ask_divination
+    response_text = await generate_with_retry(prompt)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\tenacity\asyncio\__init__.py", line 189, in async_wrapped
+    return await copy(fn, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\tenacity\asyncio\__init__.py", line 111, in __call__
+    do = await self.iter(retry_state=retry_state)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\tenacity\asyncio\__init__.py", line 153, in iter
+    result = await action(retry_state)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\tenacity\_utils.py", line 99, in inner
+    return call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\tenacity\__init__.py", line 421, in exc_check
+    raise retry_exc from fut.exception()
+tenacity.RetryError: RetryError[<Future at 0x2538a56c500 state=finished raised ChatGoogleGenerativeAIError>]
+
+----------------
+Error: RetryError[<Future at 0x17b0465ce90 state=finished raised ChatGoogleGenerativeAIError>]
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Roaming\Python\Python312\site-packages\langchain_google_genai\chat_models.py", line 3088, in _agenerate
+    await self.client.aio.models.generate_content(
+  File "C:\Python312\Lib\site-packages\google\genai\models.py", line 7331, in generate_content
+    response = await self._generate_content(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\google\genai\models.py", line 6095, in _generate_content
+    response = await self._api_client.async_request(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\google\genai\_api_client.py", line 1432, in async_request
+    result = await self._async_request(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\google\genai\_api_client.py", line 1364, in _async_request
+    return await retry(self._async_request_once, http_request, stream)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\tenacity\asyncio\__init__.py", line 111, in __call__
+    do = await self.iter(retry_state=retry_state)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\tenacity\asyncio\__init__.py", line 153, in iter
+    result = await action(retry_state)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\tenacity\_utils.py", line 99, in inner
+    return call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\tenacity\__init__.py", line 400, in <lambda>
+    self._add_action_func(lambda rs: rs.outcome.result())
+                                     ^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+  File "C:\Python312\Lib\site-packages\tenacity\asyncio\__init__.py", line 114, in __call__
+    result = await fn(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\google\genai\_api_client.py", line 1310, in _async_request_once
+    await errors.APIError.raise_for_async_response(response)
+  File "C:\Python312\Lib\site-packages\google\genai\errors.py", line 216, in raise_for_async_response
+    await cls.raise_error_async(status_code, response_json, response)
+  File "C:\Python312\Lib\site-packages\google\genai\errors.py", line 238, in raise_error_async
+    raise ClientError(status_code, response_json, response)
+google.genai.errors.ClientError: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}}
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Python312\Lib\site-packages\tenacity\asyncio\__init__.py", line 114, in __call__
+    result = await fn(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\Divination\server\app\api\divination_routes.py", line 93, in generate_with_retry
+    response = await fallback_llm.ainvoke(prompt)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Roaming\Python\Python312\site-packages\langchain_core\language_models\chat_models.py", line 425, in ainvoke
+    llm_result = await self.agenerate_prompt(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Roaming\Python\Python312\site-packages\langchain_core\language_models\chat_models.py", line 1132, in agenerate_prompt
+    return await self.agenerate(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Roaming\Python\Python312\site-packages\langchain_core\language_models\chat_models.py", line 1090, in agenerate
+    raise exceptions[0]
+  File "C:\Users\Admin\AppData\Roaming\Python\Python312\site-packages\langchain_core\language_models\chat_models.py", line 1359, in _agenerate_with_cache
+    result = await self._agenerate(
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Roaming\Python\Python312\site-packages\langchain_google_genai\chat_models.py", line 3093, in _agenerate
+    _handle_client_error(e, request)
+  File "C:\Users\Admin\AppData\Roaming\Python\Python312\site-packages\langchain_google_genai\chat_models.py", line 145, in _handle_client_error
+    raise ChatGoogleGenerativeAIError(msg) from e
+langchain_google_genai.chat_models.ChatGoogleGenerativeAIError: Error calling model 'gemini-pro' (NOT_FOUND): 404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}}
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "e:\Divination\server\app\api\divination_routes.py", line 53, in ask_divination
+    response_text = await generate_with_retry(prompt)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\tenacity\asyncio\__init__.py", line 189, in async_wrapped
+    return await copy(fn, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\tenacity\asyncio\__init__.py", line 111, in __call__
+    do = await self.iter(retry_state=retry_state)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\tenacity\asyncio\__init__.py", line 153, in iter
+    result = await action(retry_state)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\tenacity\_utils.py", line 99, in inner
+    return call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\tenacity\__init__.py", line 421, in exc_check
+    raise retry_exc from fut.exception()
+tenacity.RetryError: RetryError[<Future at 0x17b0465ce90 state=finished raised ChatGoogleGenerativeAIError>]
+
+----------------
+Error: RetryError[<Future at 0x1c1aba304d0 state=finished raised NameError>]
+Traceback (most recent call last):
+  File "C:\Python312\Lib\site-packages\tenacity\asyncio\__init__.py", line 114, in __call__
+    result = await fn(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\Divination\server\app\api\divination_routes.py", line 87, in generate_with_retry
+    async with aiohttp.ClientSession() as session:
+               ^^^^^^^
+NameError: name 'aiohttp' is not defined
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "e:\Divination\server\app\api\divination_routes.py", line 49, in ask_divination
+    response_text = await generate_with_retry(prompt)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\tenacity\asyncio\__init__.py", line 189, in async_wrapped
+    return await copy(fn, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\tenacity\asyncio\__init__.py", line 111, in __call__
+    do = await self.iter(retry_state=retry_state)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\tenacity\asyncio\__init__.py", line 153, in iter
+    result = await action(retry_state)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\tenacity\_utils.py", line 99, in inner
+    return call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\tenacity\__init__.py", line 421, in exc_check
+    raise retry_exc from fut.exception()
+tenacity.RetryError: RetryError[<Future at 0x1c1aba304d0 state=finished raised NameError>]
+
+----------------
+Error: RetryError[<Future at 0x16dc92e44a0 state=finished raised Exception>]
+Traceback (most recent call last):
+  File "C:\Python312\Lib\site-packages\tenacity\asyncio\__init__.py", line 114, in __call__
+    result = await fn(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\Divination\server\app\api\divination_routes.py", line 100, in generate_with_retry
+    raise Exception(f"Gemini Pro Error {response_pro.status}: {error_pro}")
+Exception: Gemini Pro Error 404: {
+  "error": {
+    "code": 404,
+    "message": "models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.",
+    "status": "NOT_FOUND"
+  }
+}
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "e:\Divination\server\app\api\divination_routes.py", line 51, in ask_divination
+    response_text = await generate_with_retry(prompt)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\tenacity\asyncio\__init__.py", line 189, in async_wrapped
+    return await copy(fn, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\tenacity\asyncio\__init__.py", line 111, in __call__
+    do = await self.iter(retry_state=retry_state)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\tenacity\asyncio\__init__.py", line 153, in iter
+    result = await action(retry_state)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\tenacity\_utils.py", line 99, in inner
+    return call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\site-packages\tenacity\__init__.py", line 421, in exc_check
+    raise retry_exc from fut.exception()
+tenacity.RetryError: RetryError[<Future at 0x16dc92e44a0 state=finished raised Exception>]
+
+----------------

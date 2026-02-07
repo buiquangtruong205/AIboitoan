@@ -1,0 +1,134 @@
+[
+    {
+        "card": "The Fool",
+        "meaning": "Khởi đầu mới, sự hồn nhiên, phiêu lưu, tự do. Lá bài này khuyên bạn hãy tin tưởng vào trực giác và bước đi với tâm thế cởi mở.",
+        "upright": "Sáng tạo, khởi đầu, tiềm năng.",
+        "reversed": "Bất cẩn, rủi ro, bế tắc."
+    },
+    {
+        "card": "The Magician",
+        "meaning": "Sức mạnh ý chí, sự sáng tạo, kỹ năng, hành động. Bạn có đủ mọi công cụ cần thiết để đạt được mục tiêu.",
+        "upright": "Tập trung, thành thạo, thực hiện.",
+        "reversed": "Thao túng, thiếu kế hoạch, lãng phí tài năng."
+    },
+    {
+        "card": "The High Priestess",
+        "meaning": "Trực giác, sự huyền bí, tiềm thức, thế giới nội tâm. Hãy lắng nghe tiếng nói sâu thẳm bên trong bạn.",
+        "upright": "Trí tuệ, bí mật, bình tĩnh.",
+        "reversed": "Bối rối, nông cạn, bất an."
+    },
+    {
+        "card": "The Empress",
+        "meaning": "Sự phong bụng, nuôi dưỡng, thiên nhiên, sự sinh sôi. Đây là thời điểm của sự phát triển và tận hưởng cuộc sống.",
+        "upright": "Sáng tạo, vẻ đẹp, tình mẫu tử.",
+        "reversed": "Thiếu chăm sóc, bế tắc sáng tạo, dựa dẫm."
+    },
+    {
+        "card": "The Emperor",
+        "meaning": "Quyền lực, cấu trúc, sự ổn định, sự bảo hộ. Lá bài đại diện cho một người cha hoặc người dẫn dắt có tầm ảnh hưởng.",
+        "upright": "Kỷ luật, kiểm soát, lãnh đạo.",
+        "reversed": "Chuyên quyền, cứng nhắc, thiếu kiểm soát."
+    },
+    {
+        "card": "The Hierophant",
+        "meaning": "Truyền thống, niềm tin, sự giáo dục, sự hòa hợp. Tìm kiếm lời khuyên từ những người có kinh nghiệm.",
+        "upright": "Tôn giáo, nghi lễ, học hỏi.",
+        "reversed": "Nổi loạn, tự do cá nhân, phá vỡ quy tắc."
+    },
+    {
+        "card": "The Lovers",
+        "meaning": "Tình yêu, sự hòa hợp, các mối quan hệ, sự lựa chọn. Hãy lắng nghe trái tim mình khi đứng trước các quyết định lớn.",
+        "upright": "Kết nối, sự đồng điệu, cam kết.",
+        "reversed": "Mất cân bằng, thiếu hòa hợp, xa cách."
+    },
+    {
+        "card": "The Chariot",
+        "meaning": "Chiến thắng, sự quyết tâm, kiểm soát, hành động. Bạn đang tiến về phía trước với sự tập trung cao độ.",
+        "upright": "Thành công, ý chí, kiên định.",
+        "reversed": "Mất phương hướng, thiếu kỷ luật, thất bại."
+    },
+    {
+        "card": "Strength",
+        "meaning": "Sức mạnh nội tâm, lòng dũng cảm, sự kiên nhẫn, lòng trắc ẩn. Sự dịu dàng có thể chinh phục được những điều dữ tợn nhất.",
+        "upright": "Nhẫn nại, tự tin, bản lĩnh.",
+        "reversed": "Tự ti, yếu lòng, thiếu kiên nhẫn."
+    },
+    {
+        "card": "The Hermit",
+        "meaning": "Sự cô độc, chiêm nghiệm, tìm kiếm sự thật, hướng nội. Hãy dành thời gian để hiểu sâu hơn về bản thân.",
+        "upright": "Sâu sắc, tĩnh lặng, dẫn lối.",
+        "reversed": "Cô lập, cô đơn, quá tách biệt."
+    },
+    {
+        "card": "Wheel of Fortune",
+        "meaning": "Vận may, sự thay đổi, chu kỳ cuộc sống, định mệnh. Mọi thứ đang xoay vần, hãy sẵn sàng đón nhận những điều mới.",
+        "upright": "May mắn, bước ngoặt, cơ hội.",
+        "reversed": "Vận rủi, trì trệ, thay đổi tiêu cực."
+    },
+    {
+        "card": "Justice",
+        "meaning": "Công lý, công bằng, sự thật, luật nhân quả. Mọi hành động đều dẫn đến kết quả xứng đáng.",
+        "upright": "Trách nhiệm, minh bạch, cân bằng.",
+        "reversed": "Bất công, gian lận, thiếu trách nhiệm."
+    },
+    {
+        "card": "The Hanged Man",
+        "meaning": "Sự hy sinh, sự tạm dừng, góc nhìn mới, sự buông bỏ. Đôi khi lùi một bước là để tiến xa hơn.",
+        "upright": "Chờ đợi, thấu hiểu, thay đổi tư duy.",
+        "reversed": "Do dự, trì hoãn vô ích, cố chấp."
+    },
+    {
+        "card": "Death",
+        "meaning": "Sự kết thúc, chuyển đổi, sự thay đổi lớn, sự tái sinh. Đừng sợ hãi sự kết thúc, vì nó mở ra cánh cửa mới.",
+        "upright": "Kết thúc, thay thế, đổi mới.",
+        "reversed": "Sự kháng cự thay đổi, trì trệ, gượng ép."
+    },
+    {
+        "card": "Temperance",
+        "meaning": "Sự cân bằng, tiết chế, kiên nhẫn, mục đích. Hãy tìm kiếm sự hài hòa trong mọi việc bạn làm.",
+        "upright": "Hòa hợp, chữa lành, điều độ.",
+        "reversed": "Mất cân bằng, dư thừa, mâu thuẫn."
+    },
+    {
+        "card": "The Devil",
+        "meaning": "Sự ràng buộc, cám dỗ, vật chất, sự u mê. Hãy nhận diện những gì đang kìm hãm tự do của bạn.",
+        "upright": "Nghiện ngập, phụ thuộc, ám ảnh.",
+        "reversed": "Giải thoát, nhận thức, phá bỏ xiềng xích."
+    },
+    {
+        "card": "The Tower",
+        "meaning": "Sự thay đổi đột ngột, hỗn loạn, sự sụp đổ, sự giác ngộ. Những cấu trúc cũ không còn phù hợp sẽ phải nhường chỗ cho cái mới.",
+        "upright": "Bất ngờ, thảm họa, thức tỉnh.",
+        "reversed": "Trí hoãn sự sụp đổ, sợ hãi thay đổi."
+    },
+    {
+        "card": "The Star",
+        "meaning": "Hy vọng, niềm tin, sự trẻ hóa, cảm hứng. Một tia sáng xuất hiện sau đêm tối, dẫn lối cho bạn.",
+        "upright": "Lạc quan, bình yên, sự rạng rỡ.",
+        "reversed": "Thất vọng, mất niềm tin, bế tắc."
+    },
+    {
+        "card": "The Moon",
+        "meaning": "Ảo tưởng, nỗi sợ, trực giác, sự không chắc chắn. Hãy cẩn trọng với những gì ẩn giấu dưới ánh trăng.",
+        "upright": "Tiềm thức, trực giác mạnh mẽ, bí ẩn.",
+        "reversed": "Sợ hãi, nhầm lẫn, hiểu lầm."
+    },
+    {
+        "card": "The Sun",
+        "meaning": "Thành công, hạnh phúc, sức sống, sự rạng rỡ. Mọi thứ đang trở nên tươi sáng và tràn đầy năng lượng.",
+        "upright": "Niềm vui, sự chiến thắng, chân lý.",
+        "reversed": "Kém vui, trì trệ, thiếu sức sống."
+    },
+    {
+        "card": "Judgement",
+        "meaning": "Sự phán xét, sự tái sinh, lời gọi, sự tha thứ. Đã đến lúc nhìn nhận lại quá khứ và bước tiếp.",
+        "upright": "Thỉnh cầu, thức tỉnh, quyết định lớn.",
+        "reversed": "Tự trách, thiếu quyết đoán, trì hoãn."
+    },
+    {
+        "card": "The World",
+        "meaning": "Sự hoàn thành, sự hòa nhập, thành tựu, chu du. Bạn đã đạt tới sự viên mãn và kết thúc một hành trình dài.",
+        "upright": "Thành đạt, hoàn hảo, kết thúc tốt đẹp.",
+        "reversed": "Dở dang, thiếu nỗ lực, cần cố gắng thêm."
+    }
+]

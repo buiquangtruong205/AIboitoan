@@ -1,0 +1,98 @@
+[
+    {
+        "sign": "Bạch Dương",
+        "element": "Lửa",
+        "traits": "Năng động, dũng cảm, bốc đồng, lãnh đạo.",
+        "description": "Bạch Dương là cung đầu tiên trong vòng hoàng đạo, biểu tượng cho sự khởi đầu và năng lượng dồi dào. Người thuộc cung này thường rất thẳng thắn và nhiệt huyết.",
+        "love": "Bạch Dương nồng cháy và chủ động trong tình yêu, thích sự chinh phục.",
+        "career": "Họ thích hợp với vị trí lãnh đạo, khởi nghiệp và các công việc đòi hỏi sự can trường."
+    },
+    {
+        "sign": "Kim Ngưu",
+        "element": "Đất",
+        "traits": "Kiên định, thực tế, đáng tin cậy, yêu cái đẹp.",
+        "description": "Kim Ngưu là cung ổn định nhất. Họ chăm chỉ, kiên nhẫn và rất giỏi quản lý tài chính. Họ cũng thích hưởng thụ cuộc sống vật chất và nghệ thuật.",
+        "love": "Chân thành, chung thủy và có xu hướng chiếm hữu cao.",
+        "career": "Tài chính, bất động sản và các ngành nghệ thuật/ẩm thực."
+    },
+    {
+        "sign": "Song Tử",
+        "element": "Khí",
+        "traits": "Thông minh, linh hoạt, tò mò, giao tiếp tốt.",
+        "description": "Song Tử có khả năng thích ứng tuyệt vời và học hỏi nhanh. Họ thích giao tiếp, trao đổi ý tưởng nhưng đôi khi thiếu kiên nhẫn.",
+        "love": "Thích sự mới mẻ, giao tiếp tinh tế và cần sự đồng điệu về trí tuệ.",
+        "career": "Truyền thông, báo chí, giảng dạy và kinh doanh."
+    },
+    {
+        "sign": "Cự Giải",
+        "element": "Nước",
+        "traits": "Nhạy cảm, chu đáo, bảo vệ, hướng về gia đình.",
+        "description": "Cự Giải là cung giàu tình cảm nhất. Họ rất coi trọng gia đình và có trực giác mạnh mẽ. Tuy nhiên, họ dễ bị tổn thương và hay thay đổi tâm trạng.",
+        "love": "Cần sự an toàn, che chở và rất chăm sóc cho đối phương.",
+        "career": "Tâm lý học, giáo dục, khách sạn và dịch vụ khách hàng."
+    },
+    {
+        "sign": "Sư Tử",
+        "element": "Lửa",
+        "traits": "Tự tin, hào phóng, sáng tạo, thích được chú ý.",
+        "description": "Sư Tử sinh ra để làm trung tâm của sự chú ý. Họ có tố chất lãnh đạo, ấm áp và luôn bảo vệ những người họ yêu thương.",
+        "love": "Hào phóng, thích sự lãng mạn phô trương và rất tự hào về bạn đời.",
+        "career": "Nghệ thuật trình diễn, quản lý cấp cao và các công việc sáng tạo."
+    },
+    {
+        "sign": "Xử Nữ",
+        "element": "Đất",
+        "traits": "Chi tiết, phân tích, khiêm tốn, cầu toàn.",
+        "description": "Xử Nữ là người rất tỉ mỉ và có óc tổ chức. Họ thích giúp đỡ người khác và luôn muốn mọi thứ phải hoàn hảo.",
+        "love": "Thực tế, quan tâm đến những điều nhỏ nhặt và khá kén chọn.",
+        "career": "Y tế, kế toán, biên tập và nghiên cứu khoa học."
+    },
+    {
+        "sign": "Thiên Bình",
+        "element": "Khí",
+        "traits": "Công bằng, ngoại giao, duyên dáng, thiếu quyết đoán.",
+        "description": "Thiên Bình yêu hòa bình và sự cân bằng. Họ có gu thẩm mỹ tốt và rất giỏi trong các mối quan hệ xã hội.",
+        "love": "Yêu cái đẹp, thích sự lãng mạn nhẹ nhàng và luôn cố gắng dĩ hòa vi quý.",
+        "career": "Luật sư, nhà ngoại giao, tư vấn viên và thiết kế thời trang."
+    },
+    {
+        "sign": "Bọ Cạp",
+        "element": "Nước",
+        "traits": "Bí ẩn, đam mê, quyết đoán, hay ghen.",
+        "description": "Bọ Cạp là cung có cảm xúc mãnh liệt nhất. Họ rất sâu sắc, chung thủy nhưng cũng rất thù dai nếu bị phản bội.",
+        "love": "Nồng nhiệt, đòi hỏi sự chung thủy tuyệt đối và rất sâu sắc.",
+        "career": "Điều tra, thám tử, tài chính và các ngành tâm linh/tâm lý."
+    },
+    {
+        "sign": "Nhân Mã",
+        "element": "Lửa",
+        "traits": "Lạc quan, yêu tự do, triết lý, thẳng thắn.",
+        "description": "Nhân Mã là kẻ du mục của vòng hoàng đạo. Họ yêu thích khám phá, học hỏi những điều mới lạ và luôn nhìn vào mặt tích cực của vấn đề.",
+        "love": "Yêu tự do, thích sự trải nghiệm và không thích bị kìm kẹp.",
+        "career": "Du lịch, triết học, luật pháp và giáo dục đại học."
+    },
+    {
+        "sign": "Ma Kết",
+        "element": "Đất",
+        "traits": "Kỷ luật, tham vọng, thực tế, kiên nhẫn.",
+        "description": "Ma Kết là người làm việc chăm chỉ và có trách nhiệm cao. Họ luôn đặt mục tiêu dài hạn và kiên trì theo đuổi đến cùng.",
+        "love": "Chậm mà chắc, thực tế và rất có trách nhiệm với gia đình.",
+        "career": "Chính trị, xây dựng, quản trị kinh doanh và tài chính."
+    },
+    {
+        "sign": "Bảo Bình",
+        "element": "Khí",
+        "traits": "Độc lập, nhân đạo, sáng tạo, khó đoán.",
+        "description": "Bảo Bình là người có tư duy đi trước thời đại. Họ coi trọng sự tự do cá nhân và luôn muốn cống hiến cho cộng đồng.",
+        "love": "Cần không gian riêng, khởi đầu từ tình bạn và thích sự độc đáo.",
+        "career": "Công nghệ, khoa học vũ trụ, hoạt động xã hội và nghiên cứu."
+    },
+    {
+        "sign": "Song Ngư",
+        "element": "Nước",
+        "traits": "Mơ mộng, từ bi, nghệ thuật, trực giác.",
+        "description": "Song Ngư là cung giàu trí tưởng tượng nhất. Họ rất nhạy cảm với cảm xúc của người khác và thường có thiên hướng nghệ thuật.",
+        "love": "Lãng mạn, vị tha và thường mơ mộng về một tình yêu cổ tích.",
+        "career": "Âm nhạc, mỹ thuật, tâm lý học và các nghề nghiệp cộng đồng."
+    }
+]
